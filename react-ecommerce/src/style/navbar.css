@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 45px; /* Thêm khoảng trống để tránh nội dung bị che bởi navbar */
+}
+
+.navbar {
+    position: fixed; /* Đặt navbar ở vị trí cố định */
+    top: 0; /* Căn trên cùng của trang */
+    left: 0; /* Căn bên trái */
+    width: 100%; /* Đảm bảo navbar chiếm toàn bộ chiều ngang */
+    z-index: 1000; /* Đặt z-index cao để navbar nằm trên các phần tử khác */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(233, 193, 15, 0.8);
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng đổ bóng */
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.navbar-search input {
+    padding: 10px;
+    width: 500px;
+    border: none;
+    border-radius: 3px;
+}
+
+.navbar-search button {
+    padding: 10px;
+    border: none;
+    margin-left: 2px;
+    background-color: #fff;
+    color: #f68b1e;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.navbar-link a,
+li {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-weight: bold;
+    list-style: none;
+}

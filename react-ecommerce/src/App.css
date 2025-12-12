@@ -1,0 +1,41 @@
+/* Đảm bảo rằng nội dung trang chiếm toàn bộ chiều cao */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 95vh; /* Chiều cao tối thiểu bằng viewport */
+}
+
+.main-content {
+    flex: 1; /* Đẩy footer xuống dưới */
+}
+
+/* Cố định footer */
+.footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
